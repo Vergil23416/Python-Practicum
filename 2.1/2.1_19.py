@@ -1,0 +1,8 @@
+name, price, weight, money = input(), int(input()), int(input()), int(input())
+print('================Чек================')
+print('Товар:' + ' ' * (29 - len(name)) + name)
+print('Цена:' + ' ' * (19 - len(str(weight)) - len(str(price))) + f'{weight}кг * {price}руб/кг')
+print('Итого:' + ' ' * (26 - len(str(weight * price))) + f'{price * weight}руб')
+print('Внесено:' + ' ' * (24 - len(str(money))) + f'{money}руб')
+print('Сдача:' + ' ' * (26 - len(str(money - (price * weight)))) + f'{money - (price * weight)}руб')
+print('===================================')
