@@ -1,0 +1,1 @@
+''.join(i * c for i, c in rle)
